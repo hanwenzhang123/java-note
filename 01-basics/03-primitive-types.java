@@ -41,3 +41,10 @@ A short occupies 16 bits and has a width of 16.
 A int occupies 32 bits and has a width of 32.
 A long occupies 64 bits and has a width of 64.
    
+    
+//Casting
+Casting means to treat or convert a number from one type to another
+int myTotal = (myMinIntValue / 2);
+byte myNewByteValue = (byte) (myMinByteValue / 2);
+short myNewShortValue = (short) (myMinShortValue / 2);
+  
