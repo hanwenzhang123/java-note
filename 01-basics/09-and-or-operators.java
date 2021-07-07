@@ -16,6 +16,16 @@ public class Main{
         if ((topScore > 90) || (secondTopScore <= 90)) {
             System.out.println("Either or both of the conditions are true");
         }
+        
+        int newValue = 50;      //assign operator = 
+        if (newValue == 50) {   //equal to operator ==
+            System.out.println("This is true");
+        }
+        
+        boolean isCar = false;
+        if (!isCar) {   //not equal to != or !
+            System.out.println("This is not supposed to happen");
+        }
     }
 }
 
