@@ -34,9 +34,31 @@ public class Main{
 //Ternary Operator ? :
 a condition followed by a question mark ( ? ), 
 then an expression to execute if the condition is truthy followed by a colon ( : ), 
-and finally the expression to execute if the condition is falsy.
-  if-then-else
+and finally the expression to execute if the condition is falsy.   if-then-else
     
+Syntax: variable = Expression1 ? Expression2: Expression3
+
+//if statement
+if(Expression1)
+{
+    variable = Expression2;
+}
+else
+{
+    variable = Expression3;
+}
+
+//example
+num1 = 10;
+num2 = 20;
+
+res=(num1>num2) ? (num1+num2):(num1-num2)
+
+Since num1<num2, 
+the second operation is performed
+res = num1-num2 = -10
+
+//example
 public class Main {
 
     public static void main(String[] args) {
@@ -63,6 +85,7 @@ public class Main {
     
     }
 }
+
 - ageOfClient == 20 is the condition we are checking, it needs to turn true or false
 - true here is the value to assign to the variable isEighteenOrOver if the condition above is true
 - false here is the value to assign to the variable isEighteenOrOver if the condition above is false
