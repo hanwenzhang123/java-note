@@ -26,6 +26,12 @@ public class Main{
         if (!isCar) {   //not equal to / opposite to -> != or !  ||  if(isCar) == true -> if(isCar)
             System.out.println("This is not supposed to happen");
         }
+        
+        isCar = true;
+        boolean wasCar = isCar ? true : false;  //ternary operator ? :
+        if (wasCar) {
+            System.out.println("wasCar is true");
+        }
     }
 }
 
