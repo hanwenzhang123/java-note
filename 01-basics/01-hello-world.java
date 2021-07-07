@@ -13,3 +13,6 @@ public class hello{
     }
 }
  
+$ javac hello.java
+$ java hello
+ 
