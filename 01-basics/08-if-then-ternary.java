@@ -31,7 +31,12 @@ public class Main{
     }
 }
 
-//Ternary Operator
+//Ternary Operator ? :
+a condition followed by a question mark ( ? ), 
+then an expression to execute if the condition is truthy followed by a colon ( : ), 
+and finally the expression to execute if the condition is falsy.
+  if-then-else
+    
 public class Main {
 
     public static void main(String[] args) {
@@ -48,3 +53,17 @@ public class Main {
         }
     }
 }
+
+public class Main {
+
+    public static void main(String[] args) {
+      
+      int ageOfClient = 20;
+      boolean isEighteenOrOver = ageOfClient == 20 ? true : false;
+    
+    }
+}
+- ageOfClient == 20 is the condition we are checking, it needs to turn true or false
+- true here is the value to assign to the variable isEighteenOrOver if the condition above is true
+- false here is the value to assign to the variable isEighteenOrOver if the condition above is false
+    
