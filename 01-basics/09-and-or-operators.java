@@ -23,12 +23,11 @@ public class Main{
         }
         
         boolean isCar = false;
-        if (!isCar) {   //not equal to != or !
+        if (!isCar) {   //not equal to / opposite to -> != or !  ||  if(isCar) == true -> if(isCar)
             System.out.println("This is not supposed to happen");
         }
     }
 }
-
 
 //Summary of Operators
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
