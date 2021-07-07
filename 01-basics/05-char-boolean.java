@@ -9,7 +9,7 @@ A boolean value allows for two choices True or False, Yes or No, 1 or 0.
 
     public static void main(String[] args) {
 
-        char myChar = 'D';
+        char myChar = 'D'; //only 1 character, can not be DD
         char myUnicodeChar = '\u0044';
         System.out.println(myChar);
         System.out.println(myUnicodeChar);
