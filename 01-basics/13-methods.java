@@ -39,3 +39,7 @@ public class Main {
     }
 }
  
+in programming terms, -1 is conventionally used to indicate an error 
+and
+in searching algorithms -1 indicates an invalid value or a value not found
+     
