@@ -39,12 +39,12 @@ public class Main{
     public static void main (String[] args) {
         double myFirstValue = 20.00d;
         double mySecondValue = 80.00d;
-        double myValuesTotal = myFirstValue + mySecondValue * 100.00d;
-        System.out.println("My Values Total = " + myValuesTotal);
+        double myValuesTotal = (myFirstValue + mySecondValue) * 100.00d;
+        System.out.println("My Values Total = " + myValuesTotal);   //1000.0
         double theRemainder = myValuesTotal % 40.00d;
-        System.out.println("The Remainder = " + theRemainder);
+        System.out.println("The Remainder = " + theRemainder);  //0.0
         boolean isNoRemainder = (theRemainder == 0) ? true : false;
-        System.out.println("Is No Remainder = " + isNoRemainder);
+        System.out.println("Is No Remainder = " + isNoRemainder);   //true
         if(!isNoRemaainder) {
             System.out.println("Got some remainder");
         }
