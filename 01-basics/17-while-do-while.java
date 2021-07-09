@@ -16,7 +16,7 @@ for(int i = 0; i <= 5; i++) {   //init; condition; increment
 }  
 
 
-//do while loop syntax
+//do while loop syntax - execute at leat once
 do {
   //statement
 } while (condition); 
