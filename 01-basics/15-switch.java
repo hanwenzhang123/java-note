@@ -58,8 +58,8 @@ switch(charValue) {
         break;
 }
 
-String month = "JuNE";
-switch(month.toUpperCase()) {
+String month = "JuNE";      //will match JUNE since it is to upper case
+switch(month.toUpperCase()) {       //.toLowerCase() || .toUpperCase() -> convert the characters to match since it is case sensitive
     case "JANUARY":
         System.out.println("Jan");
         break;
