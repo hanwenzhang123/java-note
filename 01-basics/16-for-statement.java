@@ -2,8 +2,9 @@ for statement is often referred to as the for loop and the idea is that it repea
 when I say repeatedly loops its processing a certain amount of code a code block 
 in other words a given number of times or until a particular condition is satisfied
 
-for(init; termination; increment) {
-        
+//syntax
+for(init - starting point; termination - condition; increment - iteration step) {     //seminolons are required, {} for the code clock
+        //write statements
 }
 
 //Code
