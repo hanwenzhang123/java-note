@@ -127,3 +127,29 @@ public class Main {
 }
 
  
+//Fish.java
+public class Fish extends Animal {
+
+    private int gills;
+    private int eyes;
+    private int fins;
+
+    public Fish(String name, int size, int weight, int gills, int eyes, int fins) {	//constructor
+        super(name, 1, 1, size, weight);
+        this.gills = gills;
+        this.eyes = eyes;
+        this.fins = fins;
+    }
+
+    private void rest() {	//Fish.rest()
+    }
+    private void moveMuscles() {	//Fish.moveMuscles()
+    }
+    private void moveBackFin() {	//Fish.moveBackFin()
+    }	
+    private void swim(int speed) {	//Fish.swim({speed}), once it called, all below methods will be called
+        moveMuscles();
+        moveBackFin();
+        super.move(speed);
+    }
+}
