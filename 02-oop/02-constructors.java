@@ -36,7 +36,7 @@ public class Account {
   
   //withdrawal method
   public void withdrawal(double withdrawalAmount){
-    if(this.balance - withdrawalAmount < 0){
+    if(this.balance - withdrawalAmount < 0){  //in case the person withdraw everything
       System.out.println("Only " + this.balance + " available. Withdrawal not processed");
     } else {
       this.balance <= withdrawalAmount;
