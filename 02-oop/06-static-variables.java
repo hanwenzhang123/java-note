@@ -39,9 +39,9 @@ when reading user input using Scanner, we will declare scanner as aa static vari
 all static methods can access that scanner directly
 
 class Dog {
-  private static String name;
+  private static String name; //static keyword
   public Dog (String name) {
-    Dog.name = name;
+    Dog.name = name;  //not using this but the name of the claass
   }
   public void printName(){
     System.out.println("name= " + name);
@@ -56,6 +56,32 @@ public class Main {
   }
 } //static shares between instances, if we change the static then all instances will see that change we made
 //using static you can update the variable but not apply to create new ones, it will just update the one exist
+//static is used for shared variable
 
 
 instance variables
+they do not use the static keyword
+instance variables are known as field or member variables
+instance variables belong to an instance of a class
+every instance has its own copy of an instance variable
+every instance can have a different value (state)
+instance variables represent the state of an instance of a class
+
+class Dog {
+  private String name;  //just the regular, not static
+  public Dog (String name) {
+    this.name = name;
+  }
+  public void printName(){
+    System.out.println("name= " + name);
+  }
+}
+public class Main {
+  public static void main (String[] args){
+    Dog rex = new Dog("rex");  //create instance
+    Dog fluffy = new Dog("fluffy"); //create instance
+    rex.printName();  //rex
+    fluffy.printName(); //fluffy
+  }
+}
+ 
