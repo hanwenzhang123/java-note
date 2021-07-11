@@ -6,12 +6,7 @@ public class Account {
   private String customerEmailAddress;
   private String customerPhoneNumber;
   
-  //constructor - only needs the access modifier and the name of the class
-  public Account() {  //initialize the object you are creating
-    this("56789", 2.50, "Default name", "Default address", "default phone"); //calling constructor within a constructor, need to be the 1st line
-    System.out.println("Empty constructor called");
-  }
-  
+  //constructor - only needs the access modifier and the name of the class （public vs private)
   public Account(String number, double balance, String customerName, String customerEmailAddress,   //main constructor that update all the fields
                String customerPhoneNumber) {  //when we call our method, we pass values into the parameters and assign to variables
     System.out.println("Account constructor with parameters called");
@@ -23,8 +18,14 @@ public class Account {
     //setting the field value in the constructor
   }
   
+  //calling constructor within a constructor
+  public Account() {  //initialize the object you are creating
+    this("56789", 2.50, "Default name", "Default address", "default phone"); //calling constructor within a constructor, need to be the 1st line
+    System.out.println("Empty constructor called");
+  }
+  
   public Account(String customerName, String customerEmailAddress, String customerPhoneNumber) {  //call the main constructor
-    this("99999",100.55, customerName, customerEmailAddress, customerPhoneNumber);  //default the first 2 parameters
+    this("99999", 100.55, customerName, customerEmailAddress, customerPhoneNumber);  //default the first 2 parameters
   }
   
   //deposit method
@@ -102,6 +103,9 @@ public class Main {
 
         bobsAccount.deposit(51.0);  //balance 101
         bobsAccount.withdrawal(100.0);  //withdrawal, balance 1
+      
+        Account timsAccount = new Account("Tim", "tim@email.com","12345");  //create a new account with first two fields default values
+        System.out.println(timsAccount.getNumber() + " name " + timsAccount.getCustomerName());
     
     }
 }
