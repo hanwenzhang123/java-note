@@ -12,7 +12,7 @@ public class Account {
     System.out.println("Empty constructor called");
   }
   
-  public Account(String number, double balance, String customerName, String customerEmailAddress,
+  public Account(String number, double balance, String customerName, String customerEmailAddress,   //main constructor that update all the fields
                String customerPhoneNumber) {  //when we call our method, we pass values into the parameters and assign to variables
     System.out.println("Account constructor with parameters called");
     this.number = number;
@@ -21,7 +21,11 @@ public class Account {
     this.customerEmailAddress = customerEmailAddress;
     this.customerPhoneNumber = customerPhoneNumber;
     //setting the field value in the constructor
-}
+  }
+  
+  public Account(String customerName, String customerEmailAddress, String customerPhoneNumber) {  //call the main constructor
+    this("99999",100.55, customerName, customerEmailAddress, customerPhoneNumber);  //default the first 2 parameters
+  }
   
   //deposit method
   public void deposit(double depositAmount){
