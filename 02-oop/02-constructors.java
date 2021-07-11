@@ -20,8 +20,8 @@ public class Account {
   
   //calling constructor within a constructor
   public Account() {  //initialize the object you are creating
-    this("56789", 2.50, "Default name", "Default address", "default phone"); //calling constructor within a constructor, need to be the 1st line
-    System.out.println("Empty constructor called");
+    this("56789", 2.50, "Default name", "Default address", "default phone"); //need to be the 1st line
+    System.out.println("Empty constructor called");   //above are the parameters that will be used if no values specified
   }
   
   public Account(String customerName, String customerEmailAddress, String customerPhoneNumber) {  //call the main constructor
@@ -91,8 +91,8 @@ public class Main {
 
     public static void main(String[] args) {
       
-        Account bobsAccount = new Account(); // "12345", 0.00, "Bob Brown", "myemail@bob.com", "(087) 123-4567");
-//      Account bobsAccount = new Account("12345", 0.00, "Bob Brown", "myemail@bob.com", "(087) 123-4567"); //set values
+        Account bobsAccount = new Account("12345", 0.00, "Bob Brown", "myemail@bob.com", "(087) 123-4567"); //set values
+        Account bobsAccount = new Account(); // empty constructor with default values, which main constructor will be called first before this one
         System.out.println(bobsAccount.getNumber());
         System.out.println(bobsAccount.getBalance());
 
