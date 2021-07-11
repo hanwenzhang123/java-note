@@ -1,6 +1,5 @@
 composition is like setting up parts of an object
 like computer, it has its cpu memory i/o motherboard as the parts to set up a computer as a whole object
-
 //Vehicle.java
 public class Vehicle {
     private String name;
@@ -9,7 +8,6 @@ public class Vehicle {
         this.name = name;
     }
 }
-
 //Car.java
 public class Car extends Vehicle {  //car is a vehicle
     private int doors;
@@ -22,7 +20,7 @@ public class Car extends Vehicle {  //car is a vehicle
     }
 }
 
-//example
+//PC - EXAMPLE
 //Main.java
 public class Main {
 
