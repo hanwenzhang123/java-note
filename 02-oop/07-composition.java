@@ -33,9 +33,10 @@ public class Main {
         Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
 
         PC thePC = new PC(theCase, theMonitor, theMotherboard);
-        thePC.getMonitor().drawPixelAt(1500, 1200, "red" );  //revoke the method drawPixelAt built in the monitor class
-        thePC.getMotherboard().loadProgram("Windows 1.0");  //load the program with its programName parameter by the values returned by the getMotherboard
-        thePC.getTheCase().pressPowerButton();	//accessing the function via the PC object
+//         thePC.getMonitor().drawPixelAt(1500, 1200, "red" );  //revoke the method drawPixelAt built in the monitor class
+//         thePC.getMotherboard().loadProgram("Windows 1.0");  //load the program with its programName parameter by the values returned by the getMotherboard
+//         thePC.getTheCase().pressPowerButton();	//accessing the function via the PC object
+	thePC.powerUp();	//click the button to show the logo
     }
 }
 
@@ -205,18 +206,30 @@ public class PC {	//instead of using extends keyword
         this.monitor = monitor;
         this.motherboard = motherboard;
     }
-
-    public Case getTheCase() {
-        return theCase;
+  
+    public void powerUp() {
+        theCase.pressPowerButton();	//once you click the button, you see the logo
+        drawLogo();
     }
 
-    public Monitor getMonitor() {
-        return monitor;
+    private void drawLogo() {
+        // Fancy graphics
+        monitor.drawPixelAt(1200, 50, "yellow");
     }
 
-    public Motherboard getMotherboard() {
-        return motherboard;
-    }
+//  private only for internally, so we do not really need these getters
+
+//     private Case getTheCase() { 
+//         return theCase;
+//     }
+
+//     private Monitor getMonitor() {
+//         return monitor;
+//     }
+
+//     private Motherboard getMotherboard() {
+//         return motherboard;
+//     }
+
 }
-
   
