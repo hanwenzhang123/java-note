@@ -25,17 +25,17 @@ public class Car extends Vehicle {  //car is a vehicle
 public class Main {
 
     public static void main(String[] args) {
-	    Dimensions dimensions = new Dimensions(20, 20, 5);
-        Case theCase = new Case("2208", "Dell", "240", dimensions);
+	Dimensions dimensions = new Dimensions(20, 20, 5);
+        Case theCase = new Case("2208", "Dell", "240", dimensions);  //using the dimensions value above (with a new variable)
 
-        Monitor theMonitor = new Monitor("27inch Beast", "Acer", 27, new Resolution(2540, 1440));
+        Monitor theMonitor = new Monitor("27inch Beast", "Acer", 27, new Resolution(2540, 1440));  //create an instance of a class without using a variable
 
         Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
 
         PC thePC = new PC(theCase, theMonitor, theMotherboard);
-        thePC.getMonitor().drawPixelAt(1500, 1200, "red" );
-        thePC.getMotherboard().loadProgram("Windows 1.0");
-        thePC.getTheCase().pressPowerButton();
+        thePC.getMonitor().drawPixelAt(1500, 1200, "red" );  //revoke the method drawPixelAt built in the monitor class
+        thePC.getMotherboard().loadProgram("Windows 1.0");  //load the program with its programName parameter by the values returned by the getMotherboard
+        thePC.getTheCase().pressPowerButton();	//accessing the function via the PC object
     }
 }
 
@@ -85,8 +85,8 @@ public class Monitor {
     private String model;
     private String manufacturer;
     private int size;
-    private Resolution nativeResolution;
-
+    private Resolution nativeResolution;  //compositionn - the resolution is a component of a monitor that it has a native resolution.
+						//monitor contains resolutions
     public Monitor(String model, String manufacturer, int size, Resolution nativeResolution) {
         this.model = model;
         this.manufacturer = manufacturer;
@@ -139,7 +139,7 @@ public class Case {
     private String model;
     private String manufacturer;
     private String powerSupply;
-    private Dimensions dimensions;
+    private Dimensions dimensions;	//the case has got the dimension
 
     public Case(String model, String manufacturer, String powerSupply, Dimensions dimensions) {
         this.model = model;
@@ -195,10 +195,10 @@ public class Dimensions {
 }
 
 //PC.java
-public class PC {
-    private Case theCase;
-    private Monitor monitor;
-    private Motherboard motherboard;
+public class PC {	//instead of using extends keyword
+    private Case theCase;	//PC has the case which has dimensions
+    private Monitor monitor;	//PC has the monitor which has resolution
+    private Motherboard motherboard;	//PC has the motherborad
 
     public PC(Case theCase, Monitor monitor, Motherboard motherboard) {
         this.theCase = theCase;
