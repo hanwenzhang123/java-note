@@ -9,7 +9,7 @@ public class Main{
 ```java
 import java.util.Scanner; 
 
-public class Pizza{    
+public class Main{    
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); 
