@@ -59,7 +59,7 @@ public class DeskPhone implements ITelephone {  //using the keyword implements, 
     }
 }
 
-//MobilePhone.java - often used the interface ITelephone
+//MobilePhone.java - another implementation using the interface ITelephone
 public class MobilePhone implements ITelephone {
 
     private int myNumber;
