@@ -13,9 +13,9 @@ public class Main {
 }
 
 instance methods belong to an instance of a class.
-to use an instance method, we have to instantiate the class first usually by using the new keyword.
+to use an instance method, we have to instantiate the class first usually by using the "new" keyword.
 instance methods can access instance methods and variables directly
-instance methods aalso can access static methods and variables directly
+instance methods also can access static methods and variables directly
 
 class Dog {
   public void bark(){
