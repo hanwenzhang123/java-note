@@ -33,10 +33,10 @@ Static vs Instance Variable
 
 static variables declared using the keyword static 
 static variables are also known as static member variables
-every instance of that class shares the same static variable
-if changes are made to that variable, all other instances will see the effect of the change
-when reading user input using Scanner, we will declare scanner as aa static variables are
-all static methods can access that scanner directly
+* every instance of that class shares the same static variable
+* if changes are made to that variable, all other instances will see the effect of the change
+when reading user input using Scanner, we will declare scanner as a static variables.
+all static methods can access that scanner directly.
 
 //example - static
 class Dog {
