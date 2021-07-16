@@ -38,6 +38,7 @@ if changes are made to that variable, all other instances will see the effect of
 when reading user input using Scanner, we will declare scanner as aa static variables are
 all static methods can access that scanner directly
 
+//example - static
 class Dog {
   private static String name; //static keyword
   public Dog (String name) {
@@ -67,6 +68,7 @@ every instance has its own copy of an instance variable
 every instance can have a different value (state)
 instance variables represent the state of an instance of a class
 
+  //example - instance
 class Dog {
   private String name;  //just the regular, not static
   public Dog (String name) {
@@ -84,4 +86,4 @@ public class Main {
     fluffy.printName(); //fluffy
   }
 }
- 
+ //when using instance, we create its own individual variables
