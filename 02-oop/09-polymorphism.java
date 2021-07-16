@@ -1,4 +1,4 @@
-//create many classes within one java source file
+//create many classes within one java source file (many forms)
 //aassigning different functionality depending on the type of object that we have created
 //polymorphism also inheritate from the parent class without the extends keyword
 
