@@ -4,8 +4,10 @@ methods that a particular class that implements the interface must implement
   a way to standardize the way a particular set of classes is used
   a commitment, a contract, you stick to what is in that interface
   
-  //ITelephone.java
-  public interface ITelephone {       //these are the methods that will be implemented, contract
+In Java, multiple inheritance is only available by implementing several interfaces. 
+  
+//ITelephone.java
+public interface ITelephone {       //these are the methods that will be implemented, contract
     void powerOn();
     void dial(int phoneNumber);
     void answer();
