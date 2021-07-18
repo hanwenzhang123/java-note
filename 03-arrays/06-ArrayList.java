@@ -2,6 +2,7 @@
 private int[] myNumbers = new int[50];  //array
 private ArrayList<String> = new ArrayList<String>(); 
 //put what kind of the datatype will be in that ArrayList in that <>, here will be String
+//type argument can not be primitive in ArrayList like ArrayList<int> intArrayList will be error
 
 //GroceryList.java
 import java.util.ArrayList;
