@@ -4,6 +4,8 @@ private ArrayList<String> = new ArrayList<String>();
 //put what kind of the datatype will be in that ArrayList in that <>, here will be String
 
 //GroceryList.java
+import java.util.ArrayList;
+
 public class GroceryList {
     private ArrayList<String> groceryList = new ArrayList<String>();
 
