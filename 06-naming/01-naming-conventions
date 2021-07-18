@@ -1,0 +1,69 @@
+The things that you will name in jave are
+- packages
+- classes
+- interfaces
+- methods
+- constants
+- variables
+- type parameters
+
+
+Packages
+- always lower case
+- names should be unique
+- use your internet domain name, reversed
+- use underscore instead of -
+- start with understand if start with a number or a java keyword
+
+switch.supplier.com - com.supplier._switch
+1world.com - com._1world
+
+java.lang
+java.io
+
+
+class names
+- CamelCase
+- class names should be nouns (they represent things)
+- should start with a capital letter
+- each word in the name should also start with a capital (LinkedList, ArrayList, Main)
+
+
+interface names
+- capitalized like class name (CamelCase)
+- consider what objects implementing the interface will become of what they will be able to do
+for example: list, comparable, serializeable
+
+
+method names
+- mixed case
+- often verbs
+- reflect the function performed or the result returned
+for example: size() getName() addPlayer()
+
+
+constance
+- ALL UPPER_CASE
+- seperate words with underscore _
+- declared using the final word
+static final int MAX_INT
+static final double P1 = 3.1415926
+
+
+variable names
+- mixedCase
+- meaningful and indicative
+- start with lower case letter
+- do not use underscores
+for example: i, league, BoxLength
+
+
+type parameters
+- single character, capital letters
+E - Element(used extensively by the java collection framework)
+K - Key
+T - Type
+V - Value
+S, U, V, etc - 2, 3, 4 types
+
+  
