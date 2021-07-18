@@ -1,5 +1,24 @@
-reference types v.s. value types
+//Reference Types vs Value Types
+//Array Reference vs Array Copy
+- to copy an array, you can not simply assign one array to another
+  this will just point your reference variable to the same array object in memory
+- you can, however, use the array clone() method to copy an array
+- you can also iterate through one array and copy each element into the other way
 
+int[] x = {0, 1, 2, 3};
+int[] y = x;    //reference, both are pointed to the same element, change x also change y
+
+int[] x = {0, 1, 2, 3};
+int[] y = x.clone();    //now we copy the element, so when we change x, y will have no affect
+
+int[] x = {0, 1, 2, 3};
+int[] y = new int[4];
+
+for (int i =0; i<x.length; i++){
+    y[i] = x[i];        //this way also just make a copy of the elements stored in array x
+}
+
+//Example
 import java.util.Arrays;
 
 public class Main {
@@ -42,3 +61,5 @@ public class Main {
         array = new int[] {1, 2, 3, 4, 5};
     }
 }
+
+  
