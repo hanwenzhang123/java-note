@@ -1,5 +1,4 @@
-resize the array like change the index length (size) of an array
-
+//resize the array like change the index length (size) of an array
 
 import java.util.Scanner;
 
