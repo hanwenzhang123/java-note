@@ -5,22 +5,19 @@ import java.util.ListIterator;
 public class Demo {
     public static void main(String[] args) {
         LinkedList<String> placesToVisit = new LinkedList<String>();
-        placesToVisit.add("Sydney");
-        placesToVisit.add("Melbourne");
-        placesToVisit.add("Brisbane");
-        placesToVisit.add("Perth");
-        placesToVisit.add("Canberra");
-        placesToVisit.add("Adelaide");
-        placesToVisit.add("Darwin");
-
+        addInOrder(placesToVisit, "Sydney");    //add to the list
+        addInOrder(placesToVisit, "Melbourne");
+        addInOrder(placesToVisit, "Brisbane");
+        addInOrder(placesToVisit, "Perth");
+        addInOrder(placesToVisit, "Canberra");
+        addInOrder(placesToVisit, "Adelaide");
+        addInOrder(placesToVisit, "Darwin");
         printList(placesToVisit);
 
-        placesToVisit.add(1, "Alice Springs");  //insert to the index 1
+        addInOrder(placesToVisit, "Alice Springs");
+        addInOrder(placesToVisit, "Darwin");
         printList(placesToVisit);
-
-        placesToVisit.remove(4);
-        printList(placesToVisit);
-
+        visit(placesToVisit);
     }
 
   //using iterator is a way of accessing and goinng through all entries that are in a particular array or an arraylist or linkedlist
@@ -33,8 +30,10 @@ public class Demo {
         System.out.println("=========================");
     }
 
-    private static boolean addInOrder(LinkedList<String> linkedList, String newCity) {
-        ListIterator<String> stringListIterator = linkedList.listIterator();
+  //sorting to an alphabetic order - ListIterator 
+    
+    private static boolean addInOrder(LinkedList<String> linkedList, String newCity) {  
+        ListIterator<String> stringListIterator = linkedList.listIterator();   //this is just a setup, you need to use .next() to get to the first entry
 
         while(stringListIterator.hasNext()) {   //go through all the records
             int comparison = stringListIterator.next().compareTo(newCity);  //return a number, 0 means equal
@@ -52,8 +51,8 @@ public class Demo {
                 // move on next city
             }
         }
-
         stringListIterator.add(newCity);    //new items add to the end of the list
+        return true;
     }
     
     private static void visit(LinkedList cities) {
@@ -112,9 +111,7 @@ public class Demo {
                 case 3:
                     printMenu();
                     break;
-
             }
-
         }
     }
 
