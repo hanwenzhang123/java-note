@@ -1,6 +1,55 @@
 //Like a foreign key points to another location
 //each element holds a linked list for the value
 
+Ways to maintain a list in memory
+- arrays
+- linked list
+
+Types oof linked list
+- single linked list: navigation is forward only
+	contains 2 parts: 
+	- data(contains the actual data) 
+	- link(contains the address of the next node of the list)
+- doubly linked list: forward and backward navigation is possible
+- circular linked list: last element is linked to the first element
+
+//Linky.java
+import java.util.ArrayList;
+
+public class Linky {
+	public static void main(String[] args) {
+	LinkedList<String> linky = new LinkedList<String>();
+		
+	linky.add("Rob");
+	linky.add("Alex");
+	linky.add("Jose");
+		
+	System.out.println(linky.getFirst());
+		
+	LinkedList<Integer> linky = new LinkedList<Integer>();
+		
+	linky.add(6);
+	linky.add(78);
+	linky.add(1);
+		
+	System.out.println(linky.get(1));
+		
+	Iterator it = linky.iterator();
+	while(it.hasNext()){
+		if((int)it.next() == 78) {
+			System.out.println("We found 78");
+		}
+	}	
+	}
+}
+
+- Java LinkedList class can contain duplicate elements
+- Java LinkedList class maintains insertion order
+- Java LinkedList class is non synchronized
+- In Java LinkedList class, manipulation is fast because no shiftinng needs to occur
+- Java LinkedList class can be used as a list, stack or queue
+
+
 //Customer.java
 public class Customer {
     private String name;
