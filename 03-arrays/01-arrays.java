@@ -1,8 +1,12 @@
 Array - store multiple values of the same type
   a data structure that allows you to store a sequencce of data in same type
+  zero-index, an array with n elements is indexed from 0 to n-1, like 10 is ranged from 0 to 9
+  to access the array, we use []
+  
+Creating a new array - int[] array = new int[5];  //array[0] to array[4]
   {data type}[]
   int[] - array of integer
-  keyword "new" create new array
+  keyword "new" create new array, initialize the array elements with their default values
   
 int[] myVariable;
 myVariable = new int[10];
@@ -14,6 +18,8 @@ myIntArray[9] = 20; //last one
 
 int[] myIntArray = {1,2,3,4,5,6,7,8,9,10};  //we can assign(initiate) the value to each array element at the beginning 
                                             //and indirectly tell Java how many elements in that array 
+                                            //seperated by comma
+
 for (int i=0; i<10, i++) {  //loop i will be 0-9
   myIntArray[i] = i*10;
 }
