@@ -1,4 +1,5 @@
-using "import" to import package, a way to group related classes and interfaces together
+using "import" to import package
+   a way to group related classes and interfaces together
   like import.util.scanner
   
 Reasons to use packages
