@@ -70,7 +70,7 @@ public class Account {
 public class Main {
 
     public static void main(String[] args) {
-	    Account timsAccount = new Account("Tim");
+	Account timsAccount = new Account("Tim");
         timsAccount.deposit(1000);
         timsAccount.withdraw(500);
         timsAccount.withdraw(-200);
@@ -87,10 +87,10 @@ public class Main {
 // Challenge:
 // In the following interface declaration, what is the visibility of:
 //
-// 1. the Accessible interface?
-// 2. the int variable SOME_CONSTANT?
-// 3. methodA?
-// 4. methodB and methodC?
+// 1. the Accessible interface?	    //we set the interface private but accessble to all class within the package
+// 2. the int variable SOME_CONSTANT?	//public static final
+// 3. methodA?	//public
+// 4. methodB and methodC?	//public, interface method automatically public unless marked for private
 //
 // Hint: think back to the lecture on interfaces before answering.
 
@@ -100,3 +100,4 @@ interface Accessible {
     void methodB();
     boolean methodC();
 }
+ 
