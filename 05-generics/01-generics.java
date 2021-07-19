@@ -1,5 +1,6 @@
 //Generics Introduction
 Generics allow us to create classes interfaces and methods that takes types as parameters called type parameters
+the early we fix the bug the less it cost
 
 //Example
 import java.util.ArrayList;
