@@ -51,7 +51,8 @@ keyword final
     }
 }
 
-//SIBTest - static initialization block test
+//SIBTest - static initialization block test 
+//	  - static methods called before the non-static including the constructor
 public class SIBTest {
     public static final String owner;
 
