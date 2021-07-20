@@ -1,3 +1,47 @@
+//Try Catch Java Tutorial - handle exception
+//1
+public class TryCatchExample {
+    public static void main(String[] args) {
+        try {
+            int [] a = {1, 2, 3};
+            System.out.println(a[3]);
+        } catch(Exception e) {
+            System.out.println("Exception");
+        }
+    }
+}
+
+//2
+public class TryCatchExample {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("What is your favorite Number?")
+        try {
+            int n = scan.nextInt();
+            System.out.println(n);
+        } catch(Exception e) {
+            System.out.println("Sorry please enter an number");     // a friendly reminder
+        }
+    }
+}
+
+//3
+public class TryCatchExamples {
+	public static void main(String[] args) {
+		try {
+			int[] a = {4};
+			System.out.println(a[1]);   //null pointer exception
+		} catch(NullPointerException e) {       //different type of the exceptions
+			System.out.println("Your array is null!");
+		} catch(ArrayIndexOutOfBoundsException e) {
+			System.out.println("Your index is out of bounds!");
+		} catch(Exception e) {  //general exception
+			System.out.println("Something else went wrong!");
+		}
+	}
+}
+
+
 //Example.java
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
