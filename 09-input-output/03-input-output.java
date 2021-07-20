@@ -1,6 +1,29 @@
 input - reading
 output - writing
 
+//FileReader.java
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class FileReader {
+    public static void main(String[] args) throws IOException {	//might throw an IO exception, error for input or output
+	    File file = new File("Desktop/text.txt");	//put in the file path as a string
+	    Scanner scan = new Scanner(file);		//scanning the file line by line
+	    
+	    String fileContent = "";	//store the content here when export to a new file
+	    while(scan.hasNextLine()){
+		    fileContent = fileContent.concat(scan.nextLine() + "\n");	//save to a new copy, adding to each line
+// 		    System.out.println(scan.nextLine());	//print it out as long as there is a next line 
+	    }
+	    
+	    FileWriter writer = new FileWriter("Desktop/newfile.txt");	//put in the path of the new file as a string
+	    writer.write(fileContent);	//export everything from the fileContent to this new file
+	    writer.close(); 	//do not forget to close the file
+    }
+}
+
 
 
 //Main.java
