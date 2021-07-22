@@ -33,7 +33,7 @@ public class TryCatchExamples {
 			System.out.println(a[1]);   //null pointer exception
 		} catch(NullPointerException e) {       //different type of the exceptions
 			System.out.println("Your array is null!");
-		} catch(ArrayIndexOutOfBoundsException e) {
+		} catch(ArrayIndexOutOfBoundsException e) {	//more specific ones
 			System.out.println("Your index is out of bounds!");
 		} catch(Exception e) {  //general exception
 			System.out.println("Something else went wrong!");
@@ -154,3 +154,4 @@ public class Main {
         return x / y;
     }
 }
+             
