@@ -7,6 +7,11 @@ LBYL and EAFP
 exception - an event which occured during the execution of a program that disrupts the normal flow of the program instruction
 we better to catch a specific exception ranther just generalizing
 
+//2 types of exception
+-checked exceptions
+-unchecked exceptions
+checked exceptions are checked at compile-time while unchecked exceptions are checked at runtime.
+
 
 //Example.java
 import java.util.Scanner;
