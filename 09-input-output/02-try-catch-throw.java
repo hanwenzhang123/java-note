@@ -43,6 +43,8 @@ public class TryCatchExamples {
 
 
 //Example.java
+//throw: declare an exception which might get thrown by the function while executing the code
+//allows the compiler to help you write code that handles this type of error, but it does not prevent the abnormal termination of the program
 import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
@@ -56,17 +58,17 @@ public class Example {
 
     private static int divide() {
         int x, y;
-        try {
+        try {	//try is block scope, so we declare x and y data type outside the try block
             x = getInt();
             y = getInt();
-        } catch(NoSuchElementException e) 
-            throw new ArithmeticException("no suitable input");
+        } catch(NoSuchElementException e) 		//catch block should be as simple as possible
+            throw new ArithmeticException("no suitable input");		//the message on the terminal
         }
         System.out.println("x is " + x + ", y is " + y);
         try {
             return x / y;
         } catch(ArithmeticException e) {
-            throw new ArithmeticException("attempt to divide by zero");
+            throw new ArithmeticException("attempt to divide by zero");	//throw the exception, red messages
         }
     }
 
@@ -74,84 +76,14 @@ public class Example {
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter an integer ");
         while(true) {
-            try {
+            try {			
                 return s.nextInt();
             } catch(InputMismatchException e) {
                 // go round again.  Read past the end of line in the input first
-                s.nextLine();
+                s.nextLine();	//read the next line
                 System.out.println("Please enter a number using only the digits 0 to 9 ");
             }
         }
     }
 }
-
-
-//Main.java
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
-public class Main {
-
-    public static void main(String[] args) {
-//        int x = 98;
-//        int y = 0;
-//        System.out.println(divideLBYL(x, y));
-//        System.out.println(divideEAFP(x, y));
-//        System.out.println(divide(x, y));
-        int x = getIntEAFP();
-        System.out.println("x is " + x);
-    }
-
-    private static int getInt() {
-        Scanner s = new Scanner(System.in);
-        return s.nextInt();
-    }
-
-    private static int getIntLBYL() {
-        Scanner s = new Scanner(System.in);
-        boolean isValid = true;
-        System.out.println("Please enter an integer ");
-        String input = s.next();
-        for(int i=0; i<input.length(); i++) {
-            if(!Character.isDigit(input.charAt(i))) {
-                isValid = false;
-                break;
-            }
-        }
-        if(isValid) {
-            return Integer.parseInt(input);
-        }
-        return 0;
-    }
-
-    private static int getIntEAFP() {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Please enter an integer ");
-        try {
-            return s.nextInt();
-        } catch(InputMismatchException e) {
-            return 0;
-        }
-    }
-
-    private static int divideLBYL(int x, int y) {
-        if(y != 0) {
-            return x / y;
-        } else {
-            return 0;
-        }
-    }
-
-    private static int divideEAFP(int x, int y) {
-        try {
-            return x / y;
-        } catch(ArithmeticException e) {
-            return 0;
-        }
-    }
-
-    private static int divide(int x, int y) {
-        return x / y;
-    }
-}
-             
+  
