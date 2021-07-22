@@ -74,7 +74,7 @@ public class Main {
     private static int getIntEAFP() {   //using exception, less code
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter an integer ");
-        try {
+        try {                   //you can put as much code as you need within the try block
             return s.nextInt();
         } catch(InputMismatchException e) { //catch the error   //just catch(Exception e) works too but on a general side
             return 0;
