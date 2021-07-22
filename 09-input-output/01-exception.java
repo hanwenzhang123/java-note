@@ -92,7 +92,7 @@ public class Main {
     private static int divideEAFP(int x, int y) {
         try {
             return x / y;
-        } catch(ArithmeticException e) {    //catch the error
+        } catch(ArithmeticException e) {    //catch the error, we would want to catch a specific exception than a general one
             return 0;
         }
     }
