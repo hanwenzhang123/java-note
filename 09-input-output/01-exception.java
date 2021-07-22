@@ -11,6 +11,7 @@ we better to catch a specific exception ranther just generalizing
 -checked exceptions
 -unchecked exceptions
 checked exceptions are checked at compile-time while unchecked exceptions are checked at runtime.
+    we can not avoid checked exceptions, otherwise our code can not compile
 
 
 //Example.java
