@@ -59,7 +59,7 @@ public class Example {
         try {
             x = getInt();
             y = getInt();
-        } catch(NoSuchElementException e) {
+        } catch(NoSuchElementException e) 
             throw new ArithmeticException("no suitable input");
         }
         System.out.println("x is " + x + ", y is " + y);
