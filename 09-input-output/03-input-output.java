@@ -27,6 +27,8 @@ public class FileReader {
 
 
 //Locations.java
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -35,6 +37,29 @@ import java.util.Set;
 public class Locations implements Map<Integer, Location> {
     private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
 
+    public static void main(String[] args) {
+        FileWriter locFile = null;
+        try {
+            locFile = new FileWriter("locations.txt");  //IO exception is checked exception, we have to catch the exception
+            for(Location location : locations.values()) {
+                locFile.write(location.getLocationID() + "," + location.getDescription() + "\n");
+            }
+        } catch(IOException e) {
+            System.out.println("In catch block");
+            e.printStackTrace();
+        } finally {			//a finally block, it will always be executed
+            System.out.println("in finally block");
+            try {
+                if(locFile != null) {
+                    System.out.println("Attempting to close locfile");
+                    locFile.close();        //have to close the writer
+                }
+            } catch(IOException e) {		//just in case any exception raised during closing the writer
+                e.printStackTrace();
+            }
+        }
+    }
+	
     static {
         Map<String, Integer> tempExit = new HashMap<String, Integer>();
         locations.put(0, new Location(0, "You are sitting in front of a computer learning Java",null));
