@@ -5,7 +5,8 @@ import java.util.*;
 
 public class Theatre {
     private final String theatreName;
-    private List<Seat> seats = new ArrayList<>();
+    private List<Seat> seats = new ArrayList<>();	//can also be new LinkedList<>();
+//  private Collection<Seat> seats = new HashSet<>();	//can also be new LinkedHashSet<>();
 
     public Theatre(String theatreName, int numRows, int seatsPerRow) {
         this.theatreName = theatreName;
