@@ -1,13 +1,20 @@
+This is object-oriented programming because programs are built around objects and their interactions. 
+  An object contains state and behavior.
 state - stores its sate in fields - variables
 behavior - methods
 
 class as a template or a blueprint for creating objects
+An instance is the thing itself.
 
 public/private - access modifier
 private - you can not access that variable outside of the code block
   //always go with private inside the class
 
-public class Main {} - a statement which creates a new class in java
+Java main method is the entry point of any java program. You must have a main method in each program as the accessing point.
+  Its syntax is always public static void main(String[] args). 
+  
+public class Main {} - a statement which creates a new class in java.
+  A class is the set of instructions that describe how an instance can behave and what information it contains.
 
 
 //Car.java
