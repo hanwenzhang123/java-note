@@ -50,7 +50,7 @@ public class TwoDimArrays {
 
 	public static void main(String[] args) {
 
-		int[][] lotteryCard = { { 20, 15, 7 }, { 8, 7, 19 }, { 7, 13, 41 } };	//each row in {}
+		int[][] lotteryCard = { { 20, 15, 7 }, { 8, 7, 19 }, { 7, 13, 47 } };	//each row in {}
 
 		int[][] lotteryCard2 = new int[3][3];
 		lotteryCard2[0][0] = 20;
@@ -61,22 +61,20 @@ public class TwoDimArrays {
 		lotteryCard2[1][2] = 19;
 		lotteryCard2[2][0] = 7;
 		lotteryCard2[2][1] = 13;
-		lotteryCard2[2][1] = 41;
+		lotteryCard2[2][1] = 47;
 
-		// [row][column]	- Array is the row
-		System.out.println(lotteryCard[0][0]);
+		// [row][column]	- Array starts with a row
+		System.out.println(lotteryCard[0][0]);	//20
 
 		System.out.println("---------");
-
-		for (int i = 0; i <= 2; i++) {
-			System.out.println(lotteryCard[i][i]);
+		for (int i = 0; i < 3; i++) {
+			System.out.println(lotteryCard[i][i]);	//20 7 47; [0][0], [1][1], [2][2]
 		}
 
 		System.out.println("---------");
-
-		for (int i = 0; i <= 2; i++) {
-			for (int j = 0; j <= 2; j++) {
-				System.out.println(lotteryCard[i][j]);
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				System.out.println(lotteryCard[i][j]);	//print out everything in card
 			}
 		}
 	}
