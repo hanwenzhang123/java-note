@@ -4,6 +4,7 @@ state - stores its sate in fields - variables
 behavior - methods
 
 class as a template or a blueprint for creating objects
+give objects state through instance fields. 
 An instance is the thing itself.
 
 public/private - access modifier
@@ -15,7 +16,8 @@ Java main method is the entry point of any java program. You must have a main me
   
 public class Main {} - a statement which creates a new class in java.
   A class is the set of instructions that describe how an instance can behave and what information it contains.
-
+ Each Java program must contain at least one class.
+ The main() method is automatically run when thee .class file is executed.
 
 //Car.java
 
