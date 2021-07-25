@@ -20,6 +20,69 @@ You can't resize an array in Java. You'd need to either:
 - https://stackoverflow.com/questions/13197702/resize-an-array-while-keeping-current-elements-in-java
 
 
+//Arrays
+public class ZombieKiller {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to our zombie killer program!!!!");
+
+		String backpack[] = { "Shotgun", "Assault Rifle", "Sniper" };
+		String zombies[] = { "Close-range zombie", "Mid-range zombie", "Long-range zombie" };
+		int numbersZombiesHate[] = {4, 5, 90, 70, 123, 13, 561}
+
+		System.out.println("Backpack items!");
+		System.out.println(backpack[0]);
+		System.out.println(backpack[1]);
+		System.out.println(backpack[2]);
+
+		System.out.println("These are the zombies!");
+		System.out.println(zombies[0]);
+		System.out.println(zombies[1]);
+		System.out.println(zombies[2]);
+		
+		System.out.println(numbersZombiesHate[6]);	//561
+	}
+}
+
+
+//2D Arrays - everything with rows and columns using 2D Arrays - screen (2D array pixes)
+public class TwoDimArrays {
+
+	public static void main(String[] args) {
+
+		int[][] lotteryCard = { { 20, 15, 7 }, { 8, 7, 19 }, { 7, 13, 41 } };	//each row in {}
+
+		int[][] lotteryCard2 = new int[3][3];
+		lotteryCard2[0][0] = 20;
+		lotteryCard2[0][1] = 15;
+		lotteryCard2[0][2] = 7;
+		lotteryCard2[1][0] = 8;
+		lotteryCard2[1][1] = 7;
+		lotteryCard2[1][2] = 19;
+		lotteryCard2[2][0] = 7;
+		lotteryCard2[2][1] = 13;
+		lotteryCard2[2][1] = 41;
+
+		// [row][column]	- Array is the row
+		System.out.println(lotteryCard[0][0]);
+
+		System.out.println("---------");
+
+		for (int i = 0; i <= 2; i++) {
+			System.out.println(lotteryCard[i][i]);
+		}
+
+		System.out.println("---------");
+
+		for (int i = 0; i <= 2; i++) {
+			for (int j = 0; j <= 2; j++) {
+				System.out.println(lotteryCard[i][j]);
+			}
+		}
+	}
+}
+
+
 //ArrayList
 import java.util.ArrayList;
 
@@ -64,6 +127,7 @@ public class ArrayList {
     }
 }
 
+
 //LinkedList
 import java.util.LinkedList;
 import java.util.Iterator;
@@ -101,6 +165,7 @@ public class Linky {
     }
 }
 
+
 //HashSet - no indexed position
 import java.util.HashSet;
 import java.util.Iterator;
@@ -132,6 +197,7 @@ public class HashBrowns {
 	}	
     }
 }
+
 
 //HashMap - no specific order, only reply on key and values
 import java.util.HashMap;
@@ -185,6 +251,7 @@ public class BBQ {
 		
 	}
 }
+
 
 //Stack
 import java.util.Stack;
