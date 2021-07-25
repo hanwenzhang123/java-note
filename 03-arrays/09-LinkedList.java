@@ -24,23 +24,27 @@ public class Linky {
 	linky.add("Alex");
 	linky.add("Jose");
 		
+	linky.remove();	//remove from the front which rob is gone
+	linky.clear();	//clear out everything
+		
 	System.out.println(linky.getFirst());
 		
+	//another example - Integer, can not put primitive type in <>
 	LinkedList<Integer> linky = new LinkedList<Integer>();
 		
 	linky.add(6);
 	linky.add(78);
 	linky.add(1);
 		
-	System.out.println(linky.get(1));
+	System.out.println(linky.get(1));	//78
 		
-	Iterator it = linky.iterator();
-	while(it.hasNext()){
+	Iterator it = linky.iterator();		//if you do not know where is that 78, use iterator
+	while(it.hasNext()){	//while the iteration has something next
 		if((int)it.next() == 78) {
 			System.out.println("We found 78");
 		}
 	}	
-	}
+    }
 }
 
 - Java LinkedList class can contain duplicate elements
