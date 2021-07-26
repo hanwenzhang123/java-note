@@ -284,7 +284,8 @@ public class BBQ {
 		q.add("B");
 		q.add("C");
 		
-		System.out.println(q.poll());	//A - the first one	
+		System.out.println(q.poll());	//A - the first one
+		System.out.println(q.toArray()[2]);	//C
 	}
 }
   
