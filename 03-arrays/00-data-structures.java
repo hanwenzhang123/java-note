@@ -230,14 +230,53 @@ public class HashMapAwesomeness {
     }
 }
 
+//Stack
+import java.util.Stack;
+
+public class StacksRFun {
+	public static void main(String[] args) {
+		Stack<String> games = new Stack<String>();
+
+		games.add("Call of Duty");
+		games.add("Guitar Hero");
+		games.add("Super Monkey Ball");
+		
+		//System.out.println(games.pop()); //Super Monkey Ball
+		//System.out.println(games.peek());  //just to check the very top one //Super Monkey Ball
+		
+		// Y
+		// B
+		// R
+		Stack<Character> tower = new Stack<Character>();
+		
+		tower.add('R');
+		tower.add('B');
+		tower.add('Y');
+		
+		tower.size() //3
+		tower.get(0) //0 
+		tower.set(1,  'P')	//R P Y
+		
+		System.out.println(tower.peak()); //Y - the most recent one we added	
+	}
+}
+
 
 //Queue
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class BBQ {
-
 	public static void main(String[] args) {
+		Queue<String> bbqLine = new LinkedList<String>();  //for Queue, we have to type LinkedList at the right side
+		
+		bbqLine.add("Jackson");
+		bbqLine.add("Tyreek");
+		bbqLine.add("Susan");
+		
+// 		bbqLine.poll();//take out the first person in line (Jackson)
+// 		bbqLine.poll();//take out another person in line (Tyreek)
+		bbqLine.peek();		//take a peak (Jackson)
 		
 		Queue<String> q = new LinkedList<String>();
 		
@@ -245,31 +284,7 @@ public class BBQ {
 		q.add("B");
 		q.add("C");
 		
-		System.out.println(q.poll());
-		
+		System.out.println(q.poll());	//A - the first one	
 	}
 }
-
-
-//Stack
-import java.util.Stack;
-
-public class StacksRFun {
-
-	public static void main(String[] args) {
-		
-		// Y
-		// B
-		// R
-		
-		Stack<Character> tower = new Stack<Character>();
-		
-		tower.add('R');
-		tower.add('B');
-		tower.add('Y');
-		
-		System.out.println(tower.size());
-		
-	}
-}
-   
+  
