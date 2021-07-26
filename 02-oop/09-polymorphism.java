@@ -1,7 +1,32 @@
-//create many classes within one java source file (many forms)
-//aassigning different functionality depending on the type of object that we have created
-//polymorphism also inheritate from the parent class without the extends keyword
+create many classes within one java source file (many forms)
+aassigning different functionality depending on the type of object that we have created
+polymorphism also inheritate from the parent class without the extends keyword
 
+//Example1
+class Bird{
+	public void sing(){
+		System.out.println("tweet tweet tweet");
+	}
+}
+class Robin extends Bird {
+	public void sing(){
+		System.out.println("twiddledeedee");
+	}
+}
+class Pelican extends Bird {
+	public void sing(){
+		System.out.println("kwaah kwaah kwaah");
+	}
+}
+public class Polymorphism {
+	public static void main(String[] args){
+		Robin b = new Robin();	//priortize the method in Robin instead of its parent methods
+		b.sing();	//twiddledeedee
+	}	//if Robin has a parameter in its method, when we execute, it has to match the parameter, it has to be exact 
+}		//if name or parameter not matched, when we do. b.sing, we get its parent value "tweet tweet tweet"
+
+
+//Example 2
 class Movie { //based class
     private String name;  //field
 
