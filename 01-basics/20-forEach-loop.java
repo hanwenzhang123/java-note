@@ -1,3 +1,28 @@
+Sometimes we need access to the elements’ indices or we only want to iterate through a portion of a list.
+For example, we can use a for loop to print out each element in an array called inventoryItems:
+
+for (int inventoryItem = 0; inventoryItem < inventoryItems.length; inventoryItem++) {
+  // Print element at current index
+  System.out.println(inventoryItems[inventoryItem]);
+}
+
+But sometimes we couldn’t care less about the indices; we only care about the element itself.
+At times like this, for-each loops come in handy.
+    
+//for each loop
+allow us to directly loop through each item in a list of items (like an array or ArrayList) and perform some action with each item.
+    
+for (String inventoryItem : inventoryItems) {
+  // Print element value
+  System.out.println(inventoryItem);
+}
+//an enhanced for loop variable (inventoryItem) and a list to traverse through (inventoryItems).
+//We can read the : as “in” like this: for each inventoryItem (which should be a String) in inventoryItems, print inventoryItem.
+    
+We can name the enhanced for loop variable whatever we want; using the singular of a plural is just a convention. 
+    We may also encounter conventions like String word : sentence.   
+        
+
 //1
 public class happyFunTime{
     public static void main (String[] args) {
