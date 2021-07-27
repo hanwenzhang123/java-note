@@ -1,3 +1,6 @@
+When would it be helpful to use a for loop instead of a for-each loop when iterating over an ArrayList of items?
+When you aren’t starting from the beginning of the ArrayList.
+
 //For loop for array
 for (int i = 0; i < secretCode.length; i++) {
   // Increase value of element value by 1
