@@ -2,6 +2,9 @@ create many classes within one java source file (many forms)
 aassigning different functionality depending on the type of object that we have created
 polymorphism also inheritate from the parent class without the extends keyword
 
+It’s possible to use objects of different classes that share a parent class together in an array or ArrayList.
+
+
 //Example1
 class Bird{
 	public void sing(){
