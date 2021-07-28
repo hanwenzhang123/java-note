@@ -1,3 +1,4 @@
+//this keyword references to the object itself, can be instance data field, instance methods, invoke a constructor
 // No static when using the keyword this
   
 public class ThisIsFun {
@@ -39,4 +40,29 @@ public class ThisIsFun {
     
   }
 }
-    
+  
+
+//Referencing methods
+public class C1 {
+	private int x;
+	
+	public C1(int x) {
+		sexX(x);
+	}
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+}
+public class C1 {
+	private int x;
+	
+	public C1(int x) {
+		this.sexX(x);	//using this here for referencing the method
+	}
+	
+	public void setX(int x) {
+		this.x = x;
+	}
+}
+     
