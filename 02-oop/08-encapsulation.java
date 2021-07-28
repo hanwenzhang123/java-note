@@ -4,6 +4,8 @@ you are able to protect the members of a class from external access to guard aga
 we can change variable names at anytimes without affecting any other code, we set a different name at the parameter
   we protect it from external access to the field directly
   
+Encapsulation is a technique used to keep implementation details hidden from other classes. Its aim is to create small bundles of logic.
+  
 //Main.java
     public static void main(String[] args) {
 //	      Player player = new Player();
