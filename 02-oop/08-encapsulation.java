@@ -6,6 +6,8 @@ we can change variable names at anytimes without affecting any other code, we se
   
 Encapsulation is a technique used to keep implementation details hidden from other classes. Its aim is to create small bundles of logic.
   
+Making setters and getters for the variable because they are private  
+  
 //Main.java
     public static void main(String[] args) {
 //	      Player player = new Player();
