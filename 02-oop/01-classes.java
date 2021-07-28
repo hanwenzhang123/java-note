@@ -10,6 +10,13 @@ An instance is the thing itself.
 public/private - access modifier
 private - you can not access that variable outside of the code block
   //always go with private inside the class
+Local variables can only be used within the scope that they were defined in.
+
+//this
+The this keyword is a reference to the current object. 
+Use this. when referring to an instance variable.
+  The this keyword can be used to designate the difference between instance variables and local variables.
+  The this keyword can be used to call methods when writing classes.
 
 Java main method is the entry point of any java program. You must have a main method in each program as the accessing point.
   Its syntax is always public static void main(String[] args). 
