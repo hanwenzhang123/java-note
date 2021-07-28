@@ -53,7 +53,7 @@ public class TwoDimArrays {
 		int[][] lotteryCard = { { 20, 15, 7 }, { 8, 7, 19 }, { 7, 13, 47 } };	//each row in {}
 
 		int[][] lotteryCard2 = new int[3][3];
-		lotteryCard2[0][0] = 20;
+		lotteryCard2[0][0] = 20;	//Always start from 0
 		lotteryCard2[0][1] = 15;
 		lotteryCard2[0][2] = 7;
 		lotteryCard2[1][0] = 8;
@@ -72,9 +72,9 @@ public class TwoDimArrays {
 		}
 
 		System.out.println("---------");
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 3; i++) {		//two for loops  
 			for (int j = 0; j < 3; j++) {
-				System.out.println(lotteryCard[i][j]);	//print out everything in card
+				System.out.println(lotteryCard[i][j]);	//going to the array and print out everything, 1st row 2nd row 3rd row
 			}
 		}
 	}
