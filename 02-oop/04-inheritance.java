@@ -7,6 +7,17 @@ Using the keyword "@Override" to override from parent objects
         chew(); //call the one in dog class
         super.eat();  //call the parent class
     }
+    
+Parent class, superclass, and base class refer to the class that another class inherits from (like Shape).
+Child class, subclass, and derived class refer to a class that inherits from another class (like Triangle).
+class Shape {
+  // Shape class members
+ }
+class Triangle extends Shape {
+  // additional Triangle class members
+}
+
+Java will automatically (and secretly) call super() as the first line of your child class constructor.
 
 //Animal.java
 public class Animal {
