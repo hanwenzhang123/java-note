@@ -18,6 +18,7 @@ Use this. when referring to an instance variable.
   The this keyword can be used to designate the difference between instance variables and local variables.
   The this keyword can be used to call methods when writing classes.
 
+//main()
 Java main method is the entry point of any java program. You must have a main method in each program as the accessing point.
   Its syntax is always public static void main(String[] args). 
   
