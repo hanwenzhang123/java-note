@@ -1,4 +1,10 @@
 //2D Array Review
+When modifying an element in a 2D array, you access the element using the variable name first, 
+the row index in brackets second, and the column index in brackets third. You then set it equal to a value.
+
+Row-major order starts at the top left of the 2D array (when viewing it as a matrix) and traverses across each row until it ends at the bottom right corner.
+
+The inner-most nested loop must complete all of its iterations before the outer loop continues.
 
 // Declaring without initializing
 int[][] intTwoD;
