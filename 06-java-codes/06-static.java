@@ -1,4 +1,5 @@
 Static - share one copy of that variable with all instances of the class
+    Static methods are associated with a class, not an object of the class. As a result, static methods have no this reference.
     
 - Static methods and variables are associated with the class as a whole, not objects of the class.
 - Static methods and variables are declared as static by using the static keyword upon declaration.
