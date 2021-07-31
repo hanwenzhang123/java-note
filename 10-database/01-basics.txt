@@ -1,0 +1,21 @@
+database: the container for all the data that store
+table: a collection of related data held in the database
+field: the basic unit of data in a table
+    the invoices table has invoice, date, description, and amount fields
+column: is another name for field
+row: a single set of data containing all the columns of the table
+    a collection of all the columns that comprise the details of one entry in that table 
+flat file database: stores all data in a single table
+view: a view is a selection of rows and columns, possible from more than one table
+
+
+JDBC API - Java Database Connectivity
+using JDBC, we can not only work with database, but also spreadsheet and flat files
+
+JDBC acts as a middleman between a Java application and a data source. 
+To use a particular data source from an application, we need the JDBC driver for the data source.
+    
+JDBC contains 2 packages
+- java.sql (core JDBC)
+- javax.sql (optional JDBC)
+The APIs in the javax.sql package are required when working with database servers.
