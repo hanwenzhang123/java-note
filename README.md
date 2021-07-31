@@ -196,6 +196,29 @@ public class Linky {
     }
 }
 ```
+## Iterator
+```java
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Scratchpad {
+	public static void main(String[] args) {
+		
+		List<Person> myList = new ArrayList<Collection>();
+		myList.add(new ArrayList());
+		myList.add(new HashSet());
+		
+		Iterator<Object> iter = myList.iterator();
+		while(iter.hasNext()) {
+			Object o = iter.next();
+			if ( o instanceof String) {
+				//do something
+			}
+		}
+	}
+}
+
+```
 ## HashSet
 no indexed position
 ```java
@@ -230,7 +253,7 @@ public class HashBrowns {
     }
 }
 ```
-##HashMap 
+## HashMap 
 no specific order, only reply on key and values
 ```java
 import java.util.HashMap;
