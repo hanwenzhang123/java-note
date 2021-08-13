@@ -5,7 +5,8 @@ static methods can not access instance methods and variables directly
 usually used for operations that do not require any data from an instance of the class
 we do not and can not use this keyword
 whenever you see a method does not use instance variable that method should be declared as a static method
-for examplee, main is a static method and it is called by the JVM when it starts an application
+static methods have direct access from other objects
+for example, main is a static method and it is called by the JVM when it starts an application
 
 public class Main {
   public static void main (String[] args){
