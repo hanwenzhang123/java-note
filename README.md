@@ -35,6 +35,13 @@ public class Main{
 
 }
 ```
+# Java OOP
+## When a new object is created
+- memory is dynamically allocated
+- instance variables are initialized
+- the new operator calls the constructor and returns the reference to the new object
+- the reference is assigned to an instance variable (a reference to the object)
+
 # Data Structure
 ## java.util.ArrayList 
 ```
