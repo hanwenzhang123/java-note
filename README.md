@@ -49,6 +49,12 @@ c = new Counter()
 // variable c keeps the value of that memory location
 ```
 
+## Clone
+```java
+Car c1 = new Car("ABCD", "EF", 2000, 20000)
+Car c2 = c1	//copy the reference, not the value, so you change c2, c1 changes as well
+```
+
 # Data Structure
 ## java.util.ArrayList 
 ```
