@@ -42,6 +42,13 @@ public class Main{
 - the new operator calls the constructor and returns the reference to the new object
 - the reference is assigned to an instance variable (a reference to the object)
 
+```java
+c = new Counter()
+// new operator calls the constructor method
+// return a memory location (address in memory where the object stores)
+// variable c keeps the value of that memory location
+```
+
 # Data Structure
 ## java.util.ArrayList 
 ```
