@@ -71,6 +71,13 @@ Car c1 = new Car("ABCD", "EF", 2000, 20000)
 Car c2 = c1	//copy the reference, not the value, so you change c2, c1 changes as well
 ```
 
+## Generics
+- classes and methods that can operate on a variety of data types 
+- like Pair, we can hold pairs of any type of objects
+```java
+public class Pair<A, B> {}
+```
+
 
 # Data Structure
 ## java.util.ArrayList 
