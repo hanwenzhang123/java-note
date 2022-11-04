@@ -78,16 +78,22 @@ Car c2 = c1	//copy the reference, not the value, so you change c2, c1 changes as
 public class Pair<A, B> {}
 ```
 
-
 # Data Structure
-## java.util.ArrayList 
+## java.util.ArrayList
+- useful to store elements of a single type in a certain order
+- must be fixed size when created
+- insertion and deletion at interior position of arrays can be time consuming
 ```
 Array.push    -> ArrayList.add(Object o); // Append the list
 Array.pop     -> ArrayList.remove(int index); // Remove list[index]
 Array.shift   -> ArrayList.remove(0); // Remove first element
 Array.unshift -> ArrayList.add(int index, Object o); // Prepend the list
 ```
-## java.util.LinkedList 
+## java.util.LinkedList
+- often used to implement stacks and queues
+- in array, every location stores a single data, but linked lists store 2 jobs
+1. store data (like array)
+2. remember which box is next (store a reference to the next box)
 ```
 push()    -> LinkedList.addLast(); // Or just LinkedList.add();
 pop()     -> LinkedList.pollLast();
