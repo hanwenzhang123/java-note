@@ -42,6 +42,22 @@ public class Main{
 - the new operator calls the constructor and returns the reference to the new object
 - the reference is assigned to an instance variable (a reference to the object)
 
+#### Goal of OO Design
+Robustness, Adaptability, Reusability
+
+## Inheritance
+- something is something
+- super(): run the constructor from the parent class
+
+## Interface
+- specify a contract for what an object must follow
+- you can implement multiple interfaces
+
+## Abstract
+- abstract: without implementation
+- concrete: with implementation
+- must implement all abstract methods in parent methods
+
 ```java
 c = new Counter()
 // new operator calls the constructor method
@@ -54,6 +70,7 @@ c = new Counter()
 Car c1 = new Car("ABCD", "EF", 2000, 20000)
 Car c2 = c1	//copy the reference, not the value, so you change c2, c1 changes as well
 ```
+
 
 # Data Structure
 ## java.util.ArrayList 
